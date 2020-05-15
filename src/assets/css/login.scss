@@ -1,0 +1,81 @@
+@import "variable.scss";
+.login {
+    .content {
+        padding-top: set(100px);
+        text-align: center;
+        height: calc(100vh);
+        background: #fff;
+        box-sizing: border-box;
+        img {
+            width: set(260px);
+        }
+    }
+    .login_button {
+        padding: 0 set(30px);
+    }
+    .regis {
+        display: flex;
+        justify-content: space-between;
+        padding: set(20px);
+    }
+}
+.regis {
+    .content {
+        padding: set(100px) set(20px) set(20px);
+        background: #fff;
+        height: calc(100vh);
+        background: #fff;
+        box-sizing: border-box;
+        .bottom {
+            padding: 0 set(20px)
+        }
+        .next {
+            padding: 0 set(20px);
+            margin-top: set(40px);
+            margin-bottom: set(20px);
+            .van-button--primary {
+                border-radius: set(40px)
+            }
+            .van-button--normal {
+                padding: 0 set(30px);
+                font-size: set(28px);
+            }
+        }
+        .van-hairline--top-bottom::after {
+            border: none
+        }
+        .van-cell {
+            padding: set(20px) set(32px);
+            line-height: set(48px);
+            font-size: set(28px);
+            .van-field__button {
+                width: 40%;
+                img {
+                    width: 100%
+                }
+            }
+            input {
+                height: set(80px);
+                line-height: set(42px);
+                border: none;
+                border-bottom: 1px solid rgba(0, 0, 0, .2);
+                margin-bottom: 0;
+                padding: set(20px) set(30px);
+                font-size: set(28px)
+            }
+        }
+    }
+}
+.login_all_button{
+    .van-button {
+        width: 100%;
+        height: set(88px);
+        line-height: set(84px);
+        border-radius: set(6px);
+        font-size: set(32px)
+    }
+    .van-button--primary {
+        background: #e7352c;
+        border: 1px solid #e7352c
+    }
+}

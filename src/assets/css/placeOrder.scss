@@ -1,0 +1,128 @@
+@import "variable.scss";
+.placeOrder {
+    .content {
+        margin-top: set(100px);
+        padding-bottom: set(100px);
+        .address {
+            margin-bottom: set(20px);
+            margin-bottom: set(20px);
+            .addressList {
+                font-size: set(24px)
+            }
+        }
+        .details {
+            .van-cell {
+                margin-bottom: set(20px)
+            }
+            .details_con {
+                padding-bottom: set(10px)
+            }
+            .addressList {
+                .con_top {
+                    display: flex;
+                    justify-content: space-between;
+                    font-size: set(24px);
+                    margin-bottom: set(20px);
+                    .left {
+                        width: set(160px);
+                        height: set(160px);
+                        img {
+                            width: 100%;
+                            height: 100%
+                        }
+                    }
+                    .center {
+                        flex: 1;
+                        padding: 0 set(20px);
+                        .property {
+                            span {
+                                background: #f5f5f5;
+                                display: inline-block;
+                                padding: set(4px);
+                                color: #9e9e9e
+                            }
+                        }
+                        .time {
+                            color: #ff9800
+                        }
+                    }
+                    .right {
+                        .bottom {
+                            text-align: right
+                        }
+                    }
+                }
+                .con_center {
+                    font-size: set(24px);
+                    .logistics{
+                        padding-left: set(100px);
+                        display: flex;
+                        justify-content: space-between;
+                        .logisticsTitle {
+                            display: flex;
+                            align-items: center
+                        }
+                        .van-icon {
+                            margin-left: set(4px);
+                            margin-top: set(-2px)
+                        }
+                    }
+                }
+                .con_bottom {
+                    display: flex;
+                    justify-content: flex-end;
+                    font-size: set(24px);
+                    margin-top: set(10px);
+                    .allNumber {
+                        color: #9e9e9e;
+                        margin-right: set(10px)
+                    }
+                    .allPrice {
+                        color: #e7352c;
+                    }
+                }
+            }
+        }
+    }
+    .discounts {
+        font-size: set(24px);
+        .dis_right {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            .van-icon {
+                margin-left: set(4px);
+                margin-top: set(-2px)
+            }
+        }
+    }
+    .van-submit-bar__bar {
+        height: set(100px);
+        padding: 0 set(32px);
+        font-size: set(28px);
+        .van-checkbox__label {
+            margin-left: set(16px);
+            line-height: set(40px);
+        }
+        .van-submit-bar__button {
+            width: set(220px);
+            height: set(72px);
+            line-height: set(72px);
+            font-size: set(24px)
+        }
+    }
+    .van-action-sheet__content {
+        p {
+            padding: set(20px);
+        }
+    }
+    .van-submit-bar__text {
+        padding-right: set(24px);
+        .van-submit-bar__price {
+            font-size: set(24px);
+            .van-submit-bar__price--integer {
+                font-size: set(40px)
+            }
+        }
+    }
+}

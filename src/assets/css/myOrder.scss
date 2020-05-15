@@ -1,0 +1,106 @@
+@import "variable.scss";
+.orderList {
+    .content {
+        margin-top: set(100px);
+        .van-sticky--fixed {
+            top: set(98px)
+        }
+    }
+    .orderData {
+        padding: set(20px);
+        background: #fff;
+        margin-bottom: set(20px);
+        .data_top {
+            display: flex;
+            justify-content: flex-end;
+            padding: set(20px);
+            .order_delete {
+                font-size: set(28px)
+            }
+        }
+        .data_center{
+            display: flex;
+            align-items: center;
+            .price {
+                text-align: center;
+                height: set(80px);
+                .price_top,.price_bottom {
+                    height: set(40px);
+                    line-height: set(40px);
+                    text-align: right;
+                    .second {
+                        font-size: set(38px)
+                    }
+                }
+            }
+            .data_img {
+                flex: 1;
+                display: flex;
+                overflow: auto;
+                .data_img_con {
+                    width: set(140px);
+                    height: set(140px);
+                    flex-shrink: 0;
+                    margin-right: set(10px);
+                    border-radius: set(6px);
+                    overflow: hidden;
+                    img {
+                        width: 100%;
+                        height: 100%
+                    }
+                }
+            }
+            .data_title {
+                width: set(400px)
+            }
+        }
+        .data_bottom {
+            display: flex;
+            justify-content: flex-end;
+            padding-top: set(20px);
+            .van-button {
+                border-radius: set(20px);
+                height: set(48px);
+                line-height: set(42px);
+                padding: 0 set(20px);
+                font-size: set(24px);
+                border: set(1px) solid #c5c5c5;
+                margin-right: set(20px)
+            }
+            .buyagain {
+                color: #e7352c;
+                border: set(1px) solid #e7352c
+            }
+        }
+    }
+}
+.reputation {
+    .content {
+        margin-top: set(100px);
+        .shopList {
+            background: #fff;
+            padding: set(20px);
+            margin-bottom: set(20px);
+            .repu_top {
+                display: flex;
+                .shop_pic {
+                    width: set(100px);
+                    height: set(140px);
+                    overflow: hidden;
+                    display: flex;
+                    align-items: center;
+                    margin-right: set(20px);
+                    img{
+                        width: 100%
+                    }
+                }
+                .right_star {
+                    flex: 1
+                }
+            }
+            .repu_upload {
+                text-align: center
+            }
+        }
+    }
+}

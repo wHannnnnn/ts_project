@@ -1,0 +1,79 @@
+@import "variable.scss";
+@import "base.scss";
+html{
+    width: 100%;
+    height: 100%;   
+    font-size:16px;
+}   
+body{
+    font-family: PingFangSC-Light,helvetica,'Heiti SC';
+}
+#app {
+    // font-family: 'Avenir', Helvetica, Arial, sans-serif;
+    font-size:set(24px);
+    width: 100%;
+    height: 100%;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+.van-toast {
+    padding: set(10px);
+    font-size: set(28px);
+    line-height: set(40px);
+    border-radius: set(4px);
+}
+.mui-bar-nav {
+    box-shadow: 0 0px set(6px) #ccc;
+}
+.van-tag {
+    font-size: set(24px)
+}
+.van-tabs--line .van-tabs__wrap {
+    height: set(88px)
+}
+.van-tabs__nav--line {
+    padding-bottom: set(15px)
+}
+.van-tab {
+    line-height: set(88px);
+    font-size: set(28px);
+    padding: 0 set(10px)
+}
+.van-nav-bar .van-icon {
+    color: #e7352c
+}
+.van-dialog {
+    width: set(640px);
+    font-size: set(32px);
+    border-radius: set(32px);
+    .van-dialog__message{
+        padding: set(48px);
+        font-size: set(28px);
+        line-height: set(40px);
+    }
+    .van-button {
+        font-size: set(28px);
+        height: set(100px);
+        line-height: set(96px);
+    }
+}
+.van-key {
+    height: set(108px);
+    font-size: set(48px);
+    font-style: normal;
+    line-height: set(108px);
+}
+@import "home.scss";
+@import "navIndex.scss";
+@import "shopcar.scss";
+@import "details.scss";
+@import "mine.scss";
+@import "login.scss";
+@import "address.scss";
+@import "editAddress.scss";
+@import "placeOrder.scss";
+@import "myOrder.scss";
+@import "orderDetail.scss";
+@import "discount.scss";
+@import "product.scss"

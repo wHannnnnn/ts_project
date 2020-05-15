@@ -1,0 +1,179 @@
+@import "variable.scss";
+.mine {
+    .van-nav-bar__right {
+        right: set(32px);
+        font-size: set(28px);
+    }
+    .van-nav-bar .van-icon {
+        color: #333
+    }
+    .mine_top {
+        display: flex;
+        padding: set(20px);
+        padding-top: set(120px);
+        margin-bottom: set(20px);
+        background: linear-gradient(90deg,#e7352c,#f5a19b);
+        .avatar {
+            width: set(140px);
+            height: set(140px);
+            margin-right: set(30px);
+            border-radius: 50%;
+            overflow: hidden;
+            background: #fff;
+            img {
+                width: 100%;
+                height: 100%
+            }
+        }
+        .right {
+            flex: 1;
+            font-size: set(34px);
+            color: #333;
+            .userName {
+                height: set(60px)
+            }
+            .level {
+                font-size: set(24px);
+                height: set(60px)
+            }
+            .login {
+                height: set(60px)
+            }
+        }
+    }
+    .order {
+        .van-grid-item:last-child {
+            color: #e7352c
+        }
+        .van-grid-item__content {
+            padding: set(28px) set(16px);
+            .van-grid-item__icon {
+                font-size: set(56px)
+            }
+            .van-grid-item__icon+.van-grid-item__text {
+                margin-top: set(16px)
+            }
+            .van-grid-item__text {
+                font-size: set(24px)
+            }
+        }
+    }
+    .top_title {
+        background: #fff;
+        display: flex;
+        justify-content: space-between;
+        padding: set(20px);
+        .top_left {
+            font-weight: 600;
+            font-size: set(28px)
+        }
+        .top_right {
+            color: #9E9E9E
+        }
+    }
+    .money {
+        .van-grid-item__content {
+            padding: set(32px) set(16px)
+        }
+        .number {
+            height: set(40px);
+            font-size: set(34px)
+        }
+        .name {
+            height: set(40px);
+            font-size: set(24px)
+        }
+    }
+    .van-info {
+        min-width: set(32px);
+        padding: 0 set(6px);
+        font-size: set(24px);
+        line-height: set(28px);
+        border-radius: set(32px)
+    }
+    .logOut {
+        .van-button {
+            width: 100%;
+            font-size: set(28px);
+            height: set(88px);
+            line-height: set(84px)
+        }
+    }
+}
+.setting {
+    .content {
+        margin-top: set(100px);
+        .user {
+            display: flex;
+            .avatar {
+                width: set(140px);
+                height: set(140px);
+                border-radius: 50%;
+                overflow: hidden;
+                img {
+                    width: 100%;
+                    height: 100%
+                }
+            }
+            .right {
+                flex: 1;
+                .userName {
+                    font-size: set(34px)
+                }
+                .level {
+                    font-size: set(24px)
+                }
+            }
+        }
+    }
+}
+.resetPwd {
+    margin-top: set(100px)
+}
+.user_modify {
+    .content{
+        margin-top: set(100px);
+        .avatar {
+            text-align: center;
+            background: #fff;
+            img {
+                border-radius: 50%;
+                width: set(200px);
+                height: set(200px)
+            }
+            .uploadAva {
+                font-size: set(28px);
+                padding: set(20px)
+            }
+        }
+        .name {
+            .van-cell {
+                padding: set(10px) set(30px)
+            }
+            .van-field__label {
+                display: flex;
+                align-items: center;
+                width: set(120px);
+            }
+            .van-field__body {                
+                input {
+                    border: none;
+                    margin-bottom: 0;
+                    color: #7f7f7f;
+                    font-size: set(28px)
+                }
+            }
+        }
+    }
+}
+.van-cell {
+    padding: set(20px) set(32px);
+    font-size: set(28px);
+    line-height: set(48px);
+}
+.van-cell__right-icon {
+    margin-left: set(10px);
+    height: set(48px);
+    font-size: set(32px);
+    line-height: set(48px)
+}

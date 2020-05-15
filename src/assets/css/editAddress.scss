@@ -1,0 +1,33 @@
+@import "variable.scss";
+.editAddress {
+    .content {
+        background: #fff;
+        margin-top: set(100px);
+        .van-address-edit {
+            padding:set(0px) set(40px) set(40px);
+            .van-cell {
+                padding: set(20px) 0
+            }
+            .van-address-edit__fields {
+                border-radius: set(16px);
+                .van-field__label {
+                    width: set(140px);
+                    font-size: set(28px);
+                    display: flex;
+                    align-items: center
+                }
+                .van-field__body {
+                    .van-field__control {
+                        height: set(80px);
+                        line-height: set(40px);
+                        font-size: set(28px);
+                        margin-bottom: 0;
+                        padding: set(20px) set(30px);
+                        border-radius: set(6px);
+                        border: none
+                    }
+                }
+            }
+        }
+    }
+}

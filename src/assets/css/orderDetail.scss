@@ -1,0 +1,148 @@
+@import "variable.scss";
+.orderDetail {
+    .content {
+        margin-top: set(100px);
+        padding-bottom: set(100px);
+        .detail_type {
+            padding: set(40px);
+            background: #fff;
+            margin-bottom: set(20px);
+            .van-count-down {
+                color: #e7352c
+            }
+        }
+        .detail_address {
+            margin-bottom: set(20px)
+        }
+        .van-cell__left-icon, .van-cell__right-icon {
+            margin-right: set(10px);
+            height: set(48px);
+            line-height: set(60px);
+            font-size: set(32px)
+        }
+        .allData {
+            background: #fff;
+            .orderData {
+                padding: set(20px);
+                background: #fff;
+                margin-bottom: set(20px);
+                .data_top {
+                    display: flex;
+                    justify-content: flex-end;
+                    padding: set(20px);
+                    .order_delete {
+                        font-size: set(28px)
+                    }
+                }
+                .data_center{
+                    display: flex;
+                    align-items: center;
+                    .data_img {
+                        width: set(140px);
+                        overflow: auto;
+                        margin-right: set(20px);
+                        .data_img_con {
+                            width: set(140px);
+                            height: set(140px);
+                            margin-right: set(10px);
+                            border-radius: set(6px);
+                            overflow: hidden;
+                            img {
+                                width: 100%;
+                                height: 100%
+                            }
+                        }
+                    }
+                    .data_info {
+                        flex: 1;
+                        .info_title,.info_property,.info_price {
+                            height: set(30px);
+                            line-height: set(30px)
+                        }
+                        .info_property {
+                            color: #b1b1b1;
+                            margin-top: set(6px)
+                        }
+                        .info_price {
+                            margin-top: set(20px)
+                        }
+                    }
+                }
+                .data_bottom {
+                    display: flex;
+                    justify-content: flex-end;
+                    .van-button {
+                        border-radius: set(20px);
+                        height: set(48px);
+                        line-height: set(42px);
+                        padding: 0 set(20px);
+                        font-size: set(24px);
+                        border: set(1px) solid #c5c5c5;
+                        margin-right: set(20px)
+                    }
+                }
+            }
+        }
+        .order_info{
+            padding: set(20px);
+            background: #fff;
+            .order_info_con {
+                height: set(40px);
+                line-height: set(40px);
+                margin-bottom: set(10px);
+                .order_info_title {
+                    color: #828282;
+                    margin-right: set(40px)
+                }
+            }
+        }
+        .order_price {
+            padding: set(20px);
+            background: #fff;
+            .order_info_con {
+                height: set(40px);
+                line-height: set(40px);
+                margin-bottom: set(10px);
+                display: flex;
+                justify-content: space-between;
+                .order_info_title {
+                    color: #828282;
+                }
+            }
+            .real {
+                display: flex;
+                justify-content: flex-end;
+                .realName {
+                    margin-right: set(10px)
+                }
+                .realPrice {
+                    color: #e7352c;
+                    font-size: set(36px);
+                    span {
+                        font-size: set(24px)
+                    }
+                }
+            }
+        }
+    }
+    .order_bottom {
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        height: set(100px);
+        background: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        .van-button {
+            height: set(54px);
+            line-height: set(42px);
+            border-radius: set(30px);
+            color: #646566;
+            padding: 0 set(30px);
+            font-size: set(24px);
+            margin-right: set(20px)
+        }
+    }
+}

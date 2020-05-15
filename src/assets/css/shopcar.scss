@@ -1,0 +1,223 @@
+@import "variable.scss";
+.cart {
+    .van-pull-refresh {
+      padding-bottom: set(200px);
+      .van-pull-refresh__track{
+        min-height: calc(100vh - #{set(400px)})
+      }
+    }
+    .list {
+        &-item {
+            position: relative;
+            background-color: #fff;
+            margin-bottom: set(20px);
+            border-radius: set(8px);
+            display: flex;
+            align-items: center;
+            border-bottom: set(1px) solid #eee;
+            .van-swipe-cell {
+              width: 100%
+            }
+            .listNoMore {
+              display: flex;
+              align-items: center
+            }
+        .right {
+          .van-button {
+            display: block;
+            height: set(110px);
+            line-height: set(84px);
+            font-size: set(28px);
+            padding: 0 set(30px)
+          }
+        }
+        .van-card:not(:first-child) {
+          margin-top: 0
+        }
+        .van-card {
+          font-size: set(24px);
+          background-color: transparent;
+          padding: set(16px) set(46px) set(16px) 0;
+          .van-card__thumb {
+              width: set(176px);
+              height: set(176px);
+              margin-right: set(16px);
+              border-radius: set(16px)
+          }
+          .van-card__content {
+              min-height: set(196px);
+              .van-card__title {
+                  max-height: set(64px);
+                  line-height: set(32px);
+                  margin-bottom: set(20px);
+              }
+              .tags {
+                  color: #adabab
+              }
+          }
+        }
+        .noMore {
+          color: #c8c9cc;
+          .van-card__thumb {
+            .van-image {}
+          }
+          .van-card__content {
+              .tags {
+                  color: #c8c9cc
+              }
+              .van-card__bottom {
+                .van-card__price {
+                  color: #8e8e8e
+                }
+              }
+          }
+        }
+        .van-checkbox__label {
+          width: 100%;
+          height: auto; // temp
+          box-sizing: border-box;
+          margin-left: set(86px);
+          line-height: set(40px);
+        }
+        .van-checkbox__icon {
+          top: 50%;
+          left: set(20px);
+          z-index: 1;
+          position: absolute;
+          margin-top: set(-20px);
+          font-size: set(38px);
+        }
+        .van-card__price {
+          color: #f44;
+          font-size: set(24px);
+          .van-card__price-integer {
+              font-size: set(28px)
+          }
+        }
+        .van-card__bottom {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          line-height: set(40px);
+          .van-card__price {
+              flex: 1
+          }
+          .van-stepper {
+              display: flex;
+              width: set(180px);
+              align-items: center;
+              border: 1px solid #e6dcdc;
+              .van-stepper__minus, .van-stepper__plus {
+                width: set(56px);
+                height: set(56px);
+                padding: set(16px);
+                border-radius: set(8px) 0 0 set(8px);
+                background: #fff;
+                border-radius: 0 0 0 0
+              }
+              .van-stepper__minus{
+                border-right: 1px solid #e6dcdc;
+              }
+              .van-stepper__plus{
+                border-left: 1px solid #e6dcdc;
+              }
+              input {
+                  padding: set(10px) set(15px);
+                  height: set(50px);
+                  line-height: set(30px);
+                  font-size: set(24px);
+                  margin-bottom: 0;
+                  border: none
+              }
+          }
+        }
+        }
+        &_top {
+          background: #fff;
+          display: flex;
+          justify-content: space-between;
+          padding: set(20px);
+          .left {
+            font-size: set(26px)
+          }
+          .right {
+            color: #e7352c;
+            .add_collect {
+              margin-right: set(20px);
+            }
+          }
+        }
+    }
+
+    .submit-bar,.delete-bar{
+        bottom: set(100px);
+        .van-submit-bar__bar {
+            height: set(100px);
+            padding: 0 set(32px);
+            font-size: set(28px);
+             .van-checkbox__label {
+                margin-left: set(16px);
+                line-height: set(40px);
+            }  
+        }
+        .van-checkbox__icon{
+            font-size: set(40px); 
+        }
+        .van-submit-bar__text {
+            padding-right: set(24px);
+            .van-submit-bar__price {
+                font-size: set(24px);
+                .van-submit-bar__price--integer {
+                    font-size: set(40px)
+                }
+            }
+        }
+        .van-checkbox__icon--checked .van-icon {
+            background-color: #f44;
+            border-color: #f44;
+        }
+    }
+    .delete-bar {
+      .van-submit-bar__bar {
+        justify-content: space-between;
+        align-items: center;
+      }
+    }
+    .van-submit-bar__button {
+        width: set(220px);
+        height: set(80px);
+        line-height: set(80px);
+        border-radius: set(100px);
+        font-size: set(24px)
+    }
+    .no-data {
+      text-align: center;
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%);
+      &-title {
+        font-size: set(32px);
+        color: #666;
+        font-weight: 400;
+        margin-bottom: set(20px);
+      }
+      &-txt {
+        font-size: set(28px);
+        color: #999;
+        margin-bottom: set(20px);
+      }
+      &-btn {
+        font-size: set(28px);
+        padding: 0 set(40px);
+        height: set(68px);
+        line-height: set(64px);
+      }
+    }
+}
+.van-stepper__minus::before, .van-stepper__plus::before {
+  width: set(26px)
+}
+.van-stepper__minus::after, .van-stepper__plus::after {
+  height: set(26px)
+}

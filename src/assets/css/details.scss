@@ -1,0 +1,391 @@
+@import "variable.scss";
+.details_top {
+    padding-bottom: set(100px);
+    .van-sticky--fixed {
+        top: 0
+    }
+    .top {
+        background: #fff;
+        padding: set(20px);
+        margin-bottom: set(20px);
+        img {
+            width: 100%
+        }
+    }
+    .leftIcon {
+        z-index: 999;
+        position: fixed;
+        top:set(20px);
+        font-size: set(40px)
+    }
+    .van-tabs__wrap {
+        display: flex;
+        justify-content: center;
+        background: #fff;
+    }
+    .van-tabs__content {
+        .van-popup--bottom.van-popup--round {
+            border-radius: set(20px) set(20px) 0 0;
+            font-size: set(28px);
+            .van-sku-header{
+                margin-left: set(32px);
+                .van-sku-header__img-wrap {
+                    width: set(200px);
+                    height: set(200px);
+                    border-radius: set(8px);
+                    margin: set(24px) 0
+                }
+                .van-sku-header-item {
+                    margin-top: set(10px);
+                    line-height: set(32px);
+                    font-size: set(24px);
+                    .van-sku__stock {
+                        font-size: set(24px);
+                    }
+                }
+                .van-sku-header__goods-info {
+                    min-height: set(200px);
+                    padding: set(24px) set(72px) set(24px) set(16px);
+                    .price {                
+                        font-size: set(40px);
+                        color: #e7352c
+                    }
+                }
+            }
+            .van-sku-body {
+                min-height: set(88px);
+                max-height: set(940px) !important;
+                .van-sku-group-container {
+                    margin-left: set(32px);
+                    padding: set(24px) 0 set(4px);
+                    .van-sku-row {
+                        margin: 0 set(6px) set(24px) 0;
+                        .van-sku-row__title {
+                            padding-bottom: set(24px);
+                            .van-sku-row__item {
+                                min-width: set(80px);
+                                margin: 0 set(24px) set(24px) 0;
+                                font-size: set(26px);
+                                line-height: set(32px);
+                                border-radius: set(8px)
+                            }
+                        }
+                        .van-sku-row__item {
+                            min-width: set(80px);
+                            margin: 0 set(24px) set(24px) 0;
+                            font-size: set(26px);
+                            line-height: set(32px);
+                            border-radius: set(8px);
+                        }
+                    }
+                }
+                .van-sku-stepper-stock {
+                    margin-left: set(32px);
+                    padding: set(24px) 0;
+                    .van-sku-stepper-container {
+                        min-height: set(60px);
+                        margin-left: set(40px);
+                        .van-sku__stepper-title {
+                            line-height: set(60px)
+                        }
+                        .van-sku__stepper {
+                            padding-left: set(8px);
+                            .van-stepper__minus {
+                                border-radius: set(8px) 0 0 set(8px);
+                            }
+                            .van-stepper__minus, .van-stepper__plus {
+                                width: set(56px);
+                                height: set(56px);
+                                padding: set(8px)
+                            }
+                            .van-stepper__input {
+                                width: set(140px);
+                                height: set(60px);
+                                padding: set(20px) set(30px);
+                                margin-bottom: 0;
+                                border-radius: set(6px);
+                                font-size: set(28px)
+                            }
+                        }
+                    }
+                }
+            }
+            .van-sku-actions {
+                padding: set(16px) set(32px);
+                .van-button {
+                    height: set(80px);
+                    font-size: set(28px);
+                    line-height: set(68px);
+                    &:first-of-type {
+                        border-top-left-radius: set(40px);
+                        border-bottom-left-radius: set(40px);
+                    }
+                    &:last-of-type {
+                        border-top-right-radius: set(40px);
+                        border-bottom-right-radius: set(40px);
+                    }
+                }
+            }
+        }
+    }
+    .shopPrice {
+        padding-bottom: set(20px);
+        .newPrice {
+            color: #e7352c;
+            font-size: set(40px)
+        }
+        .oldPrice {
+            font-size: set(24px);
+            text-decoration: line-through
+        }
+    }
+    .shopTitle {
+        font-size: set(34px);
+        font-weight: 600;
+        padding-bottom: set(10px)
+    }
+    // 优惠券
+    .details_con {
+        padding: set(20px);
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: set(20px);
+        .left {
+            width: set(100px);
+            font-size: set(26px);
+            font-weight: 600
+        }
+        .center {
+            flex: 1;
+            .discounts_list {
+                height: set(40px);
+                .center_title {
+                    color: #e7352c;
+                    margin-right: set(20px)
+                }
+            }
+        }
+    }
+    // 优惠券领取
+    .discounts_title {
+        margin: set(20px) 0
+    }
+
+    .discounts_con{
+        display: flex;
+        margin-bottom: set(20px);
+        .discounts_con_left {
+            width: set(140px);
+            height: set(140px);
+            background: #e7352c;
+            color: #fff;    
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            font-size: set(38px);
+            padding: set(10px);
+            .left_top {
+                span {
+                    font-size: set(24px)
+                }
+            }
+            .left_bottom {
+                font-size: set(24px)
+            }
+        }
+        .discounts_con_right {
+            flex: 1;
+            padding: set(10px) set(20px);
+            .right_top {
+                height: set(84px)
+            }
+            .right_bottom {
+                display: flex;
+                justify-content: space-between;
+                .left{
+                    font-size: set(20px)
+                }
+                .van-button {
+                    height: set(44px);
+                    line-height: set(42px);
+                    border-radius: set(20px);
+                    padding: 0 set(15px);
+                    font-size: set(24px);
+                    background: #e7352c;
+                    color: #fff
+                }
+            }
+        }
+    }
+    .van-cell__value {
+        color: #e7352c
+    }
+    // 详情
+    .van-divider {
+        margin: 0;
+        padding: set(20px) 0;
+        line-height: set(48px);
+        font-size: set(30px);
+        background: #fff
+    }
+    .detail_content {
+        width: 100%;
+        background: #fff;
+        img {
+            width: 100%
+        }
+    }
+    // 评价
+    .reputation_con{
+        margin-bottom: set(10px);
+        padding: set(20px);
+        .reputation {
+            display: flex;
+            .header_avatar {
+                width: set(100px);
+                height: set(100px);
+                border-radius: 50%;
+                overflow: hidden;
+                margin-right: set(10px);
+                img {
+                    width: 100%;
+                    height: 100%
+                }
+            }
+        }
+        .repu_value {
+            line-height: set(40px);
+            margin: set(20px)
+        }
+        .picsList {
+            display: flex;
+            overflow-x: auto;
+            .pics {
+                width: set(200px);
+                height: set(200px);
+                display: flex;
+                align-items: center;
+                flex-shrink: 0;
+                overflow: hidden;
+                margin-right: set(10px);
+                border-radius: set(10px);
+                display: inline-block;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+        .repu_property {
+            padding: set(20px);
+        }
+    }
+    // 骨架屏配置
+    .shopske {
+        .van-skeleton__row {
+            background-color: #f5f5f5;
+        }
+        .van-skeleton__row:nth-child(1) {
+            height: set(500px)
+        }
+        .van-skeleton__row:nth-child(2) {
+            width: 30%;
+            background: #e7352c40;
+            height: set(60px)
+        }
+        .van-skeleton__row:nth-child(3) {
+            width: 80%;
+            height: set(40px);
+            margin-bottom: set(60px)
+        }
+        .van-skeleton__row:nth-child(4) {
+            width: 80%;
+            height: set(40px)
+        }
+        .van-skeleton__row:nth-child(5) {
+            width: 60%;
+            height: set(40px)
+        }
+        .van-skeleton__row:nth-child(6) {
+            width: 40%;
+            height: set(40px)
+        }
+    }
+}
+.allReputation {
+    .van-pull-refresh {
+        padding: 0
+    }
+    .content{
+        margin-top: set(100px)
+    }
+    .reputation_con{
+        margin-bottom: set(10px);
+        padding: set(20px);
+        .reputation {
+            display: flex;
+            .header_avatar {
+                width: set(100px);
+                height: set(100px);
+                border-radius: 50%;
+                overflow: hidden;
+                margin-right: set(10px);
+                img {
+                    width: 100%;
+                    height: 100%
+                }
+            }
+        }
+        .repu_value {
+            line-height: set(40px);
+            margin: set(20px)
+        }
+        .picsList {
+            display: flex;
+            overflow-x: auto;
+            .pics {
+                width: set(200px);
+                height: set(200px);
+                display: flex;
+                align-items: center;
+                flex-shrink: 0;
+                overflow: hidden;
+                margin-right: set(10px);
+                border-radius: set(10px);
+                display: inline-block;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+        .repu_property {
+            padding: set(20px);
+        }
+    }
+}
+.van-goods-action {
+    z-index: 1;
+    .van-goods-action-icon {
+        min-width: set(96px);
+        height: set(100px);
+        font-size: set(24px);
+        .van-goods-action-icon__icon {
+            margin: 0 auto set(5px);
+            font-size: set(36px);
+        }
+    }
+    .van-goods-action-button {
+        height: set(80px);
+        font-size: set(24px);
+        &--first{
+            margin-left: set(10px);
+            border-top-left-radius: set(40px);
+            border-bottom-left-radius: set(40px);
+        }
+        &--last {
+            margin-right: set(10px);
+            border-top-right-radius: set(40px);
+            border-bottom-right-radius: set(40px);
+        }
+    }
+}

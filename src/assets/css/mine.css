@@ -1,0 +1,200 @@
+.mine .van-nav-bar__right {
+  right: 0.42667rem;
+  font-size: 0.37333rem;
+}
+
+.mine .van-nav-bar .van-icon {
+  color: #333;
+}
+
+.mine .mine_top {
+  display: flex;
+  padding: 0.26667rem;
+  padding-top: 1.6rem;
+  margin-bottom: 0.26667rem;
+  background: linear-gradient(90deg, #e7352c, #f5a19b);
+}
+
+.mine .mine_top .avatar {
+  width: 1.86667rem;
+  height: 1.86667rem;
+  margin-right: 0.4rem;
+  border-radius: 50%;
+  overflow: hidden;
+  background: #fff;
+}
+
+.mine .mine_top .avatar img {
+  width: 100%;
+  height: 100%;
+}
+
+.mine .mine_top .right {
+  flex: 1;
+  font-size: 0.45333rem;
+  color: #333;
+}
+
+.mine .mine_top .right .userName {
+  height: 0.8rem;
+}
+
+.mine .mine_top .right .level {
+  font-size: 0.32rem;
+  height: 0.8rem;
+}
+
+.mine .mine_top .right .login {
+  height: 0.8rem;
+}
+
+.mine .order .van-grid-item:last-child {
+  color: #e7352c;
+}
+
+.mine .order .van-grid-item__content {
+  padding: 0.37333rem 0.21333rem;
+}
+
+.mine .order .van-grid-item__content .van-grid-item__icon {
+  font-size: 0.74667rem;
+}
+
+.mine .order .van-grid-item__content .van-grid-item__icon + .van-grid-item__text {
+  margin-top: 0.21333rem;
+}
+
+.mine .order .van-grid-item__content .van-grid-item__text {
+  font-size: 0.32rem;
+}
+
+.mine .top_title {
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.26667rem;
+}
+
+.mine .top_title .top_left {
+  font-weight: 600;
+  font-size: 0.37333rem;
+}
+
+.mine .top_title .top_right {
+  color: #9E9E9E;
+}
+
+.mine .money .van-grid-item__content {
+  padding: 0.42667rem 0.21333rem;
+}
+
+.mine .money .number {
+  height: 0.53333rem;
+  font-size: 0.45333rem;
+}
+
+.mine .money .name {
+  height: 0.53333rem;
+  font-size: 0.32rem;
+}
+
+.mine .van-info {
+  min-width: 0.42667rem;
+  padding: 0 0.08rem;
+  font-size: 0.32rem;
+  line-height: 0.37333rem;
+  border-radius: 0.42667rem;
+}
+
+.mine .logOut .van-button {
+  width: 100%;
+  font-size: 0.37333rem;
+  height: 1.17333rem;
+  line-height: 1.12rem;
+}
+
+.setting .content {
+  margin-top: 1.33333rem;
+}
+
+.setting .content .user {
+  display: flex;
+}
+
+.setting .content .user .avatar {
+  width: 1.86667rem;
+  height: 1.86667rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.setting .content .user .avatar img {
+  width: 100%;
+  height: 100%;
+}
+
+.setting .content .user .right {
+  flex: 1;
+}
+
+.setting .content .user .right .userName {
+  font-size: 0.45333rem;
+}
+
+.setting .content .user .right .level {
+  font-size: 0.32rem;
+}
+
+.resetPwd {
+  margin-top: 1.33333rem;
+}
+
+.user_modify .content {
+  margin-top: 1.33333rem;
+}
+
+.user_modify .content .avatar {
+  text-align: center;
+  background: #fff;
+}
+
+.user_modify .content .avatar img {
+  border-radius: 50%;
+  width: 2.66667rem;
+  height: 2.66667rem;
+}
+
+.user_modify .content .avatar .uploadAva {
+  font-size: 0.37333rem;
+  padding: 0.26667rem;
+}
+
+.user_modify .content .name .van-cell {
+  padding: 0.13333rem 0.4rem;
+}
+
+.user_modify .content .name .van-field__label {
+  display: flex;
+  align-items: center;
+  width: 1.6rem;
+}
+
+.user_modify .content .name .van-field__body input {
+  border: none;
+  margin-bottom: 0;
+  color: #7f7f7f;
+  font-size: 0.37333rem;
+}
+
+.van-cell {
+  padding: 0.26667rem 0.42667rem;
+  font-size: 0.37333rem;
+  line-height: 0.64rem;
+}
+
+.van-cell__right-icon {
+  margin-left: 0.13333rem;
+  height: 0.64rem;
+  font-size: 0.42667rem;
+  line-height: 0.64rem;
+}
